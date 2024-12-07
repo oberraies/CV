@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/Images/Perfect engineering/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container-pages">
+        <header>
+            <div class="content-pages">
+                <div class="photo-pages">
+                    <img src="/Images/Perfect engineering/Logo.png" alt="Logo">
+                </div>
+                <div class="info">
+                    <p>Bloc 23 App 1-3 Cité Romana 2062 Tunis</p>
+                    <p>Tél: (+216) 99 44 28 79</p>
+                    <p>E-mail: <a href="mailto:oberraies@gmail.com">oberraies@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/oussama-berraies/" target="_blank">Oussama Berraies</a></p>
+                </div>
+            </div>
+            <div class="banner">
+                <h1>Berraies Oussama - <span class="small-text">Outil d'audit des valeurs énergétiques</span></h1>
+            </div>
+        </header>
+        <section class="Contexte">
+            <h2>Contexte</h2>
+            <ul class="arrow-list">
+                <li>Calcul et génération des rapports de consommation d'énergie.</li>
+                <li>Import des fichiers de saisie et des fiches d'intervention.</li>
+                <li>Crétion des dossiers et fichiers des gouvernorats et communes.</li>
+                <li>Analyse et vérification de la cohérence des données saisies.</li>
+                <li>Export des données validées sur les différentes tables Access.</li>
+                <li>Préparation des données et calcul des différents KPI.</li>
+                <li>Génération des rapports Word de chaque commune.</li>
+                <li>Génération des rapports des différents gouvernorats.</li>
+            </ul>
+        </section>
+        <section class="Projet">
+            <h2>Projet</h2>
+            <div class="Contexte-image-containter">
+                <img src="/Images/Perfect engineering/Interface.png" alt="image1" class="contexte-image-item single-image" onclick="openModal(this.src)">
+            </div>
+            <div class="image-row">
+                <img src="/Images/Perfect engineering/Calcul 1.png" alt="image1" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Perfect engineering/Calcul 2.png" alt="image2" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+
+        </section>
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <img class="modal-content" id="modalImage" alt="Aperçu de l'image">
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+
+    </div>
+</body>
+</html>

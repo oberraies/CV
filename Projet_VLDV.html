@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLDV</title>
+    <link rel="icon" href="/Images/VLDV/Logo-VDLV-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container-pages">
+        <header>
+            <div class="content-pages">
+                <div class="photo-pages">
+                    <img src="/Images/VLDV/Logo-VDLV-2.png" alt="Logo">
+                </div>
+                <div class="info">
+                    <p>Bloc 23 App 1-3 Cité Romana 2062 Tunis</p>
+                    <p>Tél: (+216) 99 44 28 79</p>
+                    <p>E-mail: <a href="mailto:oberraies@gmail.com">oberraies@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/oussama-berraies/" target="_blank">Oussama Berraies</a></p>
+                </div>
+            </div>
+            <div class="banner">
+                <h1>Berraies Oussama - <span class="small-text">Traçabilité des analyses</span></h1>
+            </div>
+        </header>
+        <section class="Contexte">
+            <h2>Contexte</h2>
+            <ul class="arrow-list">
+                <li>Extraction des données à partir des PDF envoyé par le laboratoire, les intégrer dans une table de données.</li>
+                <li>Comparaison des données extraites et des résultats.</li>
+                <li>Marqueurs visuels des bonnes ou mauvaises correspondances.</li>
+                <li>Process automatisé par quelques clics, gain de temps et remplacement de l'activité de saisie et opérations manuelles réduisant ainsi le temps de traitement de 90%.</li>
+            </ul>
+        </section>
+    </section>
+    <section class="Projet">
+        <h2>Projet</h2>
+        <div class="Contexte-image-containter">
+            <img src="/Images/VLDV/accueil.png" alt="image1" class="contexte-image-item single-image" onclick="openModal(this.src)">
+        </div>
+        <div class="image-row">
+            <img src="/Images/VLDV/calcul 1.png" alt="" class="contexte-image-item" onclick="openModal(this.src)">
+            <img src="/Images/VLDV/calcul 2.png" alt="" class="contexte-image-item" onclick="openModal(this.src)">
+        </div>
+    </section> 
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img class="modal-content" id="modalImage" alt="Aperçu de l'image">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+    </div>
+</body>
+</html>

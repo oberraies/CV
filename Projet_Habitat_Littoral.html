@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitat du littoral</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/Images/Habitat Littoral/Logo2.jpg" type="image/x-icon">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container-pages">
+        <header>
+            <div class="content-pages">
+                <div class="photo-pages">
+                    <img src="/Images/Habitat Littoral/Logo2.jpg" alt="Logo">
+                </div>
+                <div class="info">
+                    <p>Bloc 23 App 1-3 Cité Romana 2062 Tunis</p>
+                    <p>Tél: (+216) 99 44 28 79</p>
+                    <p>E-mail: <a href="mailto:oberraies@gmail.com">oberraies@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/oussama-berraies/" target="_blank">Oussama Berraies</a></p>
+                </div>
+            </div>
+            <div class="banner">
+                <h1>Berraies Oussama - <span class="small-text">Application de gestion et de vérification des fiches de paie</span></h1>
+            </div>
+        </header>
+        <section class="Contexte">
+            <h2>Contexte</h2>
+            <ul class="arrow-list">
+                <li>Mise en place des différentes caisses et régimes.</li>
+                <li>Mise en place de fiches de paie dynamiques selon profil collaborateur et son régime.</li>
+                <li>Gestion du SMIC et autres modifications pertinentes.</li>
+                <li>Gestion du personnel, des congés, des congés de maladie, maternité, paternité, accidents de travail et loi Fillon. </li>
+            </ul>   
+        </section>
+        <section class="Projet">
+            <h2>Projet</h2>
+            <div class="Contexte-image-containter">
+                <img src="/Images/Habitat Littoral/Accueil.png" alt="image1" class="contexte-image-item single-image" onclick="openModal(this.src)">
+            </div>
+            <div class="image-row">
+                <img src="/Images/Habitat Littoral/Gestion effectif.png" alt="image2" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Habitat Littoral/Gestion maladie.png" alt="image3" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+            <div class="image-row">
+                <img src="/Images/Habitat Littoral/Accident de travail.png" alt="image2" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Habitat Littoral/Consultation accidents.png" alt="image3" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+            <div class="image-row">
+                <img src="/Images/Habitat Littoral/FP1.png" alt="image2" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Habitat Littoral/FP2.png" alt="image3" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+            <div class="image-row">
+                <img src="/Images/Habitat Littoral/FP3.png" alt="image2" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Habitat Littoral/smic.png" alt="image3" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+        </section>
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <img class="modal-content" id="modalImage" alt="Aperçu de l'image">
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+</body>
+</html>

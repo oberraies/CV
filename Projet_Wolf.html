@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf</title>
+    <link rel="icon" href="/Images/Wolf/Logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container-pages">
+        <header>
+            <div class="content-pages">
+                <div class="photo-pages">
+                    <img src="/Images/Wolf/Logo2.png" alt="Logo">
+                </div>
+                <div class="info">
+                    <p>Bloc 23 App 1-3 Cité Romana 2062 Tunis</p>
+                    <p>Tél: (+216) 99 44 28 79</p>
+                    <p>E-mail: <a href="mailto:oberraies@gmail.com">oberraies@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/oussama-berraies/" target="_blank">Oussama Berraies</a></p>
+                </div>
+            </div>
+            <div class="banner">
+                <h1>Berraies Oussama - <span class="small-text">Outil d'aide au dimensionnement des pompes à chaleur</span></h1>
+            </div>
+        </header>
+        <section class="Contexte">
+            <h2>Contexte</h2>
+            <ul class="arrow-list">
+                <li>Interface de saisie installateur et client, lieu et température extérieure relative aux données géographiques.</li>
+                <li>Saisie des informations de construction (année de construction, surface, hauteur, ventilation, isolation, mitoyenneté...).</li>
+                <li>Mise en place des différents tables de correspondances.</li>
+                <li>Calcul et sélection des différents types de pompes (CHA - FHA).</li>
+                <li>Calcul des résultats de chauffage, deltas de références, débit de chauffage...</li>
+                <li>Mise en place d'un graphique dynamique déterminant la déperdition, la puissance effctive, le point de bivalence...</li>
+                <li>Export en PDF pour envoi par mail et préparation des devis.</li>
+                <li>Système d'administration pour la mise en place des différentes données et valeurs.</li>
+            </ul>
+        </section>
+        <section class="Projet">
+            <h2>Projet</h2>
+            <div class="image-row">
+                <img src="/Images/Wolf/Saisie des données client.png" alt="" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Wolf/saisie des données.png" alt="" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+            <div class="image-row">
+                <img src="/Images/Wolf/Saisie données logement.png" alt="" class="contexte-image-item" onclick="openModal(this.src)">
+                <img src="/Images/Wolf/Calcul résultat.png" alt="" class="contexte-image-item" onclick="openModal(this.src)">
+            </div>
+            <div class="Contexte-image-containter">
+                <img src="/Images/Wolf/Courbe.png" alt="image1" class="contexte-image-item single-image" onclick="openModal(this.src)">
+            </div>
+        </section>
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+            <img class="modal-content" id="modalImage" alt="Aperçu de l'image">
+            <span class="next" onclick="changeImage(1)">&#10095;</span>
+        </div>
+    </div>
+</body>
+</html>

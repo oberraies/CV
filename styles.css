@@ -1,0 +1,233 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-pages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.photo{
+    display: flex;
+    align-items: center;
+}
+.photo img{
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #577188;
+    object-fit: cover;
+}
+.photo-pages{
+    display: flex;
+    align-items: center;
+}
+.photo-pages img{
+    max-width: 100px;
+    height: auto;
+    /*border-radius: 50%; */
+    /*border: 2px solid #577188; */
+    object-fit: cover;
+}
+.info p{
+    text-align: right;
+    line-height: 1.4;
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+.banner{
+    background-color: #577188;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.banner h1{
+    margin: 0;
+    font-size: 1.5em;
+}
+.section{
+    margin-bottom: 20px;
+}
+h2{
+    color: #577188;
+    border-bottom: 2px solid #577188;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+li{
+    margin-bottom: 5px;
+}
+article h3{
+    cursor: pointer;
+    margin: 0;
+    font-size: 1.1em;
+}
+article p{
+    font-style: italic;
+    margin: 5px 0;
+    margin-left: 20px;
+}
+.details{
+    display: none;
+    margin-left: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+.toggle{
+    cursor: pointer;
+    font-weight: bold;
+    color: #577188;
+    margin-right: 10px;
+    user-select: none;
+}
+.details-link{
+    float: right;
+    padding: 5px 15px;
+    border: 2px solid #003d80;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #003d80;
+    font-style: italic;
+    margin-top: 2px;
+}
+.details-link:hover {
+    text-decoration: underline;        /* Ajoute un soulignement au survol */
+    background-color: #003d80;        /* Couleur d'arrière-plan au survol */
+    border-color: #003d80;             /* Couleur de la bordure au survol */
+    color: white;                      /* Change la couleur du texte au survol */
+}
+.details::after{
+    content: "";          /* Crée un élément après le conteneur */
+    display: table;       /* Permet de "nettoyer" le float */
+    clear:both;           /* Nettoie les floats */
+}
+.container-pages{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.small-text {
+    font-size: 0.7em; /* Ajustez la taille comme souhaité */
+    font-style: italic;
+    /*color: #666;      /* Optionnel : change la couleur pour un effet visuel */
+}
+.arrow-list {
+    list-style-type: none;   /* Supprime les puces par défaut */
+    padding: 0;              /* Supprime le padding par défaut de la liste */
+}
+.arrow-list li {
+    position: relative;       /* Nécessaire pour positionner la flèche */
+    padding-left: 25px;      /* Espace à gauche pour la flèche */
+}
+.arrow-list li::before {
+    content: "➔ ";            /* Utilise une flèche plus épaisse */
+    position: absolute;       /* Positionne la flèche */
+    left: 0;                 /* Aligne la flèche à gauche */
+    color: #577188;          /* Couleur de la flèche */
+    font-weight: bold;       /* Rend la flèche en gras */
+    font-size: 1.2em;        /* Augmente la taille de la flèche */
+    transform: translateY(-2px); /* Déplace la flèche légèrement vers le haut */
+}
+.Contexte-image-containter{
+    /*display: flex;
+    justify-content: center;*/
+    display: flex;                /* Utilise flexbox pour le conteneur */
+    flex-direction: column;       /* Aligne les éléments en colonne */
+    align-items: center;          /* Centre les éléments horizontalement */
+    margin-bottom: 20px;         /* Espace en bas de ce bloc d'images */
+}
+
+.single-image{
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+}
+.image-row{
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+.contexte-image-item{
+    max-width: 50%;
+    height: auto;
+    cursor : pointer;
+}
+.modal{
+    display: none;
+    position: fixed ;
+    z-index : 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.modal-content{
+    max-width: 90%;
+}
+.close {
+    position: absolute;          /* Positionne le bouton de fermeture */
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;             /* Curseur en forme de main */
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1001; /* Au-dessus des autres éléments */
+}
+.prev {
+    left: 20px; /* Position à gauche */
+}
+.next {
+    right: 20px; /* Position à droite */
+}
+.prev:hover, .next:hover {
+    color: #ddd; /* Effet au survol */
+}
